@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.hero {
+    background: #f4f6fb;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.btn {
+    background: blue;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.btn-outline {
+    border: 1px solid blue;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: blue;
+}
+
+.project .card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 20px;
+}
