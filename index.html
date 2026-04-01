@@ -3,66 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Garindra</title>
+    <title>Portfolio - Muhammad Nurkholis</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1>Hi, I'm Garindra Satya Aditama</h1>
-            <p>Junior Web Developer | Fresh Graduate Sistem Informasi</p>
-            <a href="#project" class="btn">Lihat Project</a>
-            <a href="cv.pdf" class="btn-outline">Download CV</a>
-        </div>
-    </section>
+<nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+  <div class="container">
+    <a class="navbar-brand fw-bold fs-4 text-dark" href="#">NURKHOLIS<span class="text-primary">.</span></a>
+  </div>
+</nav>
 
-    <!-- About -->
-    <section class="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>
-                Saya merupakan lulusan Sistem Informasi yang memiliki minat dalam pengembangan website 
-                dan aplikasi berbasis web. Saya memiliki pengalaman menggunakan PHP, MySQL, JavaScript, 
-                dan CodeIgniter dalam pembuatan sistem informasi.
-            </p>
-        </div>
-    </section>
+<section class="hero">
+    <div class="container">
+        <div class="row align-items-center min-vh-75">
+            
+            <div class="col-md-7 pe-md-5">
+                <div class="welcome-badge mb-3">
+                    Welcome to my portfolio
+                </div>
+                <h1 class="hero-title mb-4">
+                    Hi, I'm <br>
+                    <span class="text-primary">Muhammad Nurkholis</span>
+                </h1>
+                <p class="hero-desc text-muted mb-5">
+                    Junior Application Developer | Fresh Graduate Sistem Informasi
+                    yang memiliki minat dalam pengembangan aplikasi berbasis web 
+                    menggunakan PHP, MySQL, dan JavaScript.
+                </p>
 
-    <!-- Project -->
-    <section id="project" class="project">
-        <div class="container">
-            <h2>My Projects</h2>
+                <div class="d-flex gap-3 align-items-center mb-5">
+                    <a href="#project" class="btn btn-primary btn-lg px-4 rounded-pill">View My Work &rarr;</a>
+                    <a href="cv.pdf" class="btn btn-light btn-lg px-4 rounded-pill text-dark border">Download CV</a>
+                </div>
 
-            <div class="card">
-                <h3>Sistem Informasi Pemesanan Menu QR Code</h3>
-                <p>Website pemesanan menu untuk cafe menggunakan QR Code.</p>
-                <p>Tech: PHP, CodeIgniter, MySQL</p>
-                <a href="#">Demo</a>
-                <a href="#">GitHub</a>
+                <div class="social-links d-flex gap-3 fs-4 text-muted">
+                    <a href="#" class="text-reset"><i class="ri-github-fill"></i></a>
+                    <a href="#" class="text-reset"><i class="ri-linkedin-box-fill"></i></a>
+                    <a href="#" class="text-reset"><i class="ri-twitter-x-fill"></i></a>
+                    <a href="#" class="text-reset"><i class="ri-instagram-line"></i></a>
+                </div>
             </div>
 
-            <div class="card">
-                <h3>Website Company Profile</h3>
-                <p>Website company profile dengan admin panel.</p>
-                <p>Tech: HTML, CSS, JavaScript</p>
-                <a href="#">Demo</a>
-                <a href="#">GitHub</a>
+            <div class="col-md-5 position-relative d-none d-md-block">
+                <div class="photo-wrapper">
+                    <div class="bg-box"></div>
+                    
+                    <img src="assets/foto.jpg" alt="Muhammad Nurkholis" class="main-photo">
+                    
+                    <div class="floating-icon icon-code">
+                        <i class="ri-code-s-slash-line text-primary"></i>
+                    </div>
+                    <div class="floating-icon icon-paint">
+                        <i class="ri-paint-brush-line text-purple"></i>
+                    </div>
+                    <div class="floating-icon icon-phone">
+                        <i class="ri-smartphone-line text-success"></i>
+                    </div>
+                </div>
             </div>
 
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Contact -->
-    <section class="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Email: emailkamu@gmail.com</p>
-            <p>GitHub: github.com/username</p>
-            <p>LinkedIn: linkedin.com/in/username</p>
+<section id="about" class="about bg-light section-padding">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <h2 class="section-title mb-5">About Me</h2>
+                <p class="lead text-muted">
+                    Saya adalah lulusan Sistem Informasi yang memiliki minat berkarir sebagai 
+                    Application Developer. Saya memiliki pengalaman membuat sistem informasi 
+                    berbasis web menggunakan PHP, CodeIgniter, MySQL, dan JavaScript serta 
+                    terbiasa membuat sistem CRUD, login, dashboard admin, dan integrasi database.
+                </p>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
+
+<section id="project" class="project section-padding">
+    <div class="container">
+        <h2 class="section-title text-center mb-5">My Projects</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm rounded-4">
+                    <div class="card-body p-4">
+                        <h5 class="fw-bold">Sistem Informasi Pemesanan QR Code</h5>
+                        <p class="text-muted small">Website pemesanan menu berbasis QR Code.</p>
+                        <p class="small"><b>Tech:</b> PHP, CI, MySQL</p>
+                        <div class="d-flex gap-2">
+                            <a href="#" class="btn btn-sm btn-primary rounded-pill">Demo</a>
+                            <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </div>
+</section>
+
+<section id="contact" class="contact bg-dark text-white section-padding">
+    <div class="container text-center">
+        <h2 class="mb-5">Get In Touch</h2>
+        <p class="fs-5">Email: <a href="mailto:emailkamu@gmail.com" class="text-white text-decoration-none">emailkamu@gmail.com</a></p>
+        </div>
+</section>
 
 </body>
 </html>

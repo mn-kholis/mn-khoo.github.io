@@ -1,37 +1,142 @@
+/* Reset & Base Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    overflow-x: hidden;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    padding: 40px 0;
+/* Utilities */
+.text-primary { color: #0066ff !important; } /* Warna biru yang lebih cerah seperti referensi */
+.bg-primary { background-color: #0066ff !important; }
+.text-purple { color: #8e44ad; }
+.section-padding { padding: 100px 0; }
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
 }
 
-.hero {
-    background: #f4f6fb;
-    text-align: center;
-    padding: 100px 0;
+/* Min-height untuk hero agar konten di tengah secara vertikal */
+.min-vh-75 {
+    min-height: 85vh;
 }
 
-.btn {
-    background: blue;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    margin: 10px;
+/* 1. Kustomisasi Tombol & Badge */
+.welcome-badge {
+    display: inline-block;
+    background-color: #e6f0ff; /* Biru sangat muda */
+    color: #0066ff;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 500;
 }
 
-.btn-outline {
-    border: 1px solid blue;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: blue;
+.btn-primary {
+    background-color: #0066ff;
+    border: none;
+    transition: all 0.3s ease;
+}
+.btn-primary:hover {
+    background-color: #0052cc;
+    transform: translateY(-2px);
+}
+.btn-light:hover {
+    background-color: #f0f0f0;
 }
 
-.project .card {
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin-top: 20px;
+/* 2. Teks Hero */
+.hero-title {
+    font-size: 4rem; /* Sangat besar seperti referensi */
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -1px;
+}
+.hero-desc {
+    font-size: 1.25rem;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+/* 3. Sosial Media Links */
+.social-links a {
+    transition: color 0.2s ease, transform 0.2s ease;
+    display: inline-block;
+}
+.social-links a:hover {
+    color: #0066ff !important;
+    transform: scale(1.1);
+}
+
+/* =========================================
+   SPECIAL STYLES: Elemen Foto Tumpuk
+   ========================================= */
+.photo-wrapper {
+    position: relative;
+    width: 100%;
+    height: 450px; /* Atur tinggi container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Kotak background biru muda */
+.photo-wrapper .bg-box {
+    position: absolute;
+    width: 320px;
+    height: 380px;
+    background-color: #e6f0ff; /* Biru muda */
+    border-radius: 30px;
+    bottom: 20px;
+    right: 40px;
+    z-index: 1;
+}
+
+/* Foto Utama */
+.photo-wrapper .main-photo {
+    position: relative;
+    max-height: 100%;
+    z-index: 2; /* Di atas kotak biru */
+    /* Jika foto kamu tidak transparan, hapus baris di bawah ini dan pakai border-radius */
+    /* border-radius: 30px; */ 
+}
+
+/* Gaya dasar untuk semua ikon dekoratif */
+.floating-icon {
+    position: absolute;
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08); /* Shadow halus */
+    z-index: 3; /* Paling atas */
+}
+
+/* Posisi Ikon Spesifik */
+.icon-code {
+    top: 50px;
+    right: 10px;
+}
+
+.icon-paint {
+    bottom: 50px;
+    left: 80px;
+}
+
+.icon-phone {
+    top: 200px;
+    right: -20px;
+}
+
+/* Responsive adjustment untuk hero title pada layar kecil */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    .section-padding {
+        padding: 60px 0;
+    }
 }
